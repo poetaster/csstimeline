@@ -1,15 +1,18 @@
 === csstimeline ===
 Contributors: poetaster
+Donate link: http://www.netzpolitik.org
 Tags: shortcode,simple,style
 Requires at least: 3.6
 Tested up to: 4.3
 Stable tag: 1.0
-License: GPL
-License URI: LICENSE
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Installation == 
 
-Download into wordpress plugins directory. Enable in wordpress plugins interface. That's it.
+* Download zip archive into wordpress plugins directory. 
+* Enable in wordpress plugins interface. 
+* That's it.
 
 == Frequently Asked Questions == 
 
