@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: csstimeline
- * Plugin URI:
+ * Plugin URI: https://github.com/poetaster/csstimeline
  * Description: A simple plugin to style your content as a timeline with a few shortcodes.
- * Version: 0.9
+ * Version: 1.0
  * Author: Mark Washeim
  * Author URI: https://netzpolitik.org
- * License: CC-BY-SA 3.0
- * License URI: http://creativecommons.org/licenses/by-sa/3.0/de/deed.de
+ * License: GPL v3.0
+ * License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  */
  
 // constant definition
