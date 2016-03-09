@@ -17,7 +17,7 @@
   border-left: 8px solid gray;
 }
 #timeline li {
-  margin: 40px 0;
+  /*margin: 40px 0; */
   position: relative;
 }
 #timeline p {
@@ -49,7 +49,7 @@
 
 .post .content {
   max-height: 20px;
-  padding: 60px 20px 0;
+  padding: 50px 20px 0;
   border-color: transparent;
   border-width: 2px;
   border-style: solid;
@@ -80,9 +80,6 @@
 .post .content p {
   max-height: 0;
   color: transparent;
-  text-align: justify;
-  /* word-break: break-word; */
-  hyphens: auto;
   overflow: hidden;
   font-size: 10pt;
 }
@@ -122,8 +119,8 @@
   ms-transform: translateX(20px);
   webkit-transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-  font-size:9pt;
-  line-height:12pt;
+  font-size:11pt;
+  line-height:14pt;
 }
 .radio:checked ~ .content p {
   max-height: 420px;
@@ -135,58 +132,129 @@
   padding-bottom:1px;
 }
 
+
 /* -------------------------------------
  * mobile phones (vertical version only)
+ * @media screen and (max-width: 767px) {
  * ------------------------------------- */
 
-/*@media screen and (max-width: 460px) {
-  #timeline {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
-  }
-  #timeline li {
-    margin: 50px 0;
+@media screen and (max-width: 767px) {
+
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 100px;
+  padding-left: 30px;
+  border-left: 8px solid gray;
+} 
+#timeline li {
+  /*margin: 40px 0; */
+  position: relative;
+} 
+#timeline p {
+  margin: 0 0 15px;
+  font-size: 10pt;
+} 
+  
+.date {
+  margin-top: -10px;
+  top: 50%;
+  left: -138px;
+  font-size: 0.9em;
+  line-height: 12pt;
+  position: absolute;
+} 
+  
+.circle { 
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+} 
+  
+.post .content {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+} 
+.post .content:before, .post .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  /* pointer-events: none; */
+  right: 100%;
+} 
+.post .content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%; 
+  margin-top: -20px;
+} 
+.post .content:after {
+  border-right-color: transparent;
+  border-width: 17px; 
+  top: 50%;
+  margin-top: -17px;
+} 
+.post .content p {
+  max-height: 0;
+  color: transparent; 
+  overflow: hidden;
+  font-size: 10pt;
+} 
+  
+.post .content img {
+ float:right;
+ margin-left:20px;
+} 
+  
+.relative label {
+  font-size: 1.0em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 22px;
+  transition: transform 0.2s linear;
+}
+  
+.radio {
+  display: none;
+} 
+
+ .radio:checked ~ .content {
+  max-height: 420px;
+  border-color: white;
+  margin-right: 0px;
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+  font-size:11pt;
+  line-height:14pt;
+  width:120%;
+  background-color:white;
+  padding-top:50px;
+  margin-left:-148px;
   }
 
-  label {
-    width: 85%;
-    font-size: 1.1em;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: block;
-    transform: translateX(18px);
-  }
+ .radio:checked + .relative label {
+   cursor: auto;
+   width:120%;
+   padding:6px;
+   margin-left:-140px;
+ }
 
-  .post .content {
-    padding-top: 45px;
-    border-color: #eee9dc;
-  }
-  .post .content:before, .post .content:after {
-    border: solid transparent;
-    bottom: 100%;
-  }
-  .post .content:before {
-    border-bottom-color: inherit;
-    border-width: 17px;
-    top: -16px;
-    left: 50px;
-    margin-left: -17px;
-  }
-  .post .content:after {
-    border-bottom-color: #48b379;
-    border-width: 20px;
-    top: -20px;
-    left: 50px;
-    margin-left: -20px;
-  }
-  .post .content p {
-    font-size: 10pt;
-    line-height: 12pt;
-  }
+ .radio:checked + .relative .date {
+  position:relative;
+ }
 
-  .circle, .date {
-    display: none;
-  }
-*/
+}
+
