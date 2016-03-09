@@ -17,6 +17,7 @@ None Yet.
 
 == Changelog == 
 
+1.0.1 css fixes, initial mobile view removed (works down to 480 px)
 1.0 initial release
 
 == Upgrade Notice == 

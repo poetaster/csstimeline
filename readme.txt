@@ -1,9 +1,12 @@
 === csstimeline ===
-Contributors: poetaster
+Contributors: Mark Washeim (poetaster)
+Author: Mark Washeim
+Author URI: https://netzpolitik.org
 Donate link: http://www.netzpolitik.org
-Tags: shortcode,simple,style
+Plugin URI: https://github.com/poetaster/csstimeline
+Tags: timeline,shortcode,simple,style
 Requires at least: 3.6
-Tested up to: 4.3
+Tested up to: 4.4.2
 Stable tag: 1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -19,7 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 None Yet.
 
 == Changelog == 
-
+1.0.1 css fixes, initial mobile view removed (works down to 480 px)
 1.0 initial release
 
 == Upgrade Notice == 
@@ -28,8 +31,8 @@ None yet.
 
 == Screenshots == 
 
-csstimeline-1.png
-csstimeline-2.png
+1. Basic Appearance 1
+2. Basic Appearance 2
 
 == Description ==
 
@@ -44,7 +47,15 @@ This plugin provides 4 shortcodes:
 * [ctspace] - a simple spacer
 * [ctdate] - not implemented yet.
 
-An  example
+
+Take a look at the screenshots to see what rendering looks like. CSS3
+transitions and html supply minimal animations. Most markup can be used within
+the shortcodes to achieve formatting and, for instance, embed images. The
+following example demonstrates,
+
+* 'fake' super/sub sections, not using the 'date' param of ctentry 
+* embed a picture
+* format a label
 
 [ctimeline]
 

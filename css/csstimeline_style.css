@@ -12,7 +12,7 @@
  * ------------------------------------- */
 #timeline {
   list-style: none;
-  margin: 50px 0 30px 120px;
+  margin: 50px 0 30px 100px;
   padding-left: 30px;
   border-left: 8px solid gray;
 }
@@ -22,14 +22,15 @@
 }
 #timeline p {
   margin: 0 0 15px;
+  font-size: 10pt;
 }
 
 .date {
   margin-top: -10px;
   top: 50%;
-  left: -158px;
-  font-size: 0.95em;
-  line-height: 20px;
+  left: -138px;
+  font-size: 0.9em;
+  line-height: 12pt;
   position: absolute;
 }
 
@@ -48,7 +49,7 @@
 
 .post .content {
   max-height: 20px;
-  padding: 50px 20px 0;
+  padding: 60px 20px 0;
   border-color: transparent;
   border-width: 2px;
   border-style: solid;
@@ -61,7 +62,7 @@
   height: 0;
   border: solid transparent;
   position: absolute;
-  pointer-events: none;
+  /* pointer-events: none; */
   right: 100%;
 }
 .post .content:before {
@@ -80,9 +81,10 @@
   max-height: 0;
   color: transparent;
   text-align: justify;
-  word-break: break-word;
+  /* word-break: break-word; */
   hyphens: auto;
   overflow: hidden;
+  font-size: 10pt;
 }
 
 .post .content img {
@@ -90,8 +92,8 @@
  margin-left:20px;
 }
 
-label {
-  font-size: 1.3em;
+.relative label {
+  font-size: 1.0em;
   position: absolute;
   z-index: 100;
   cursor: pointer;
@@ -105,20 +107,26 @@ label {
 
 .radio:checked + .relative label {
   cursor: auto;
-  transform: translateX(42px);
+  transform: translate(40px);
+  webkit-transform: translate(40px);
+  ms-transform: translate(40px);
 }
 .radio:checked + .relative .circle {
   background: #f98262;
 }
 .radio:checked ~ .content {
-  max-height: 200px;
+  max-height: 420px;
   border-color: #eee9dc;
   margin-right: 20px;
   transform: translateX(20px);
+  ms-transform: translateX(20px);
+  webkit-transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+  font-size:9pt;
+  line-height:12pt;
 }
 .radio:checked ~ .content p {
-  max-height: 200px;
+  max-height: 420px;
   color: gray;
   transition: color 0.3s linear 0.3s;
 }
@@ -126,10 +134,12 @@ label {
   padding-top:1px;
   padding-bottom:1px;
 }
+
 /* -------------------------------------
  * mobile phones (vertical version only)
  * ------------------------------------- */
-@media screen and (max-width: 767px) {
+
+/*@media screen and (max-width: 460px) {
   #timeline {
     margin-left: 0;
     padding-left: 0;
@@ -172,11 +182,11 @@ label {
     margin-left: -20px;
   }
   .post .content p {
-    font-size: 0.9em;
-    line-height: 1.4;
+    font-size: 10pt;
+    line-height: 12pt;
   }
 
   .circle, .date {
     display: none;
   }
-
+*/
